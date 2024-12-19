@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regional Network Status - Centience Access Monitor</title>
+    <meta name="description" content="Real-time status monitoring for Centience neural network regions and consciousness transfer nodes across global infrastructure.">
+    <meta name="keywords" content="centience, neural network status, consciousness transfer, regional nodes, network monitoring">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pulse {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+        .status-pulse {
+            animation: pulse 2s infinite;
+        }
+        .region-map {
+            background: linear-gradient(45deg, #1a1a2e 25%, #16213e 25%, #16213e 50%, #1a1a2e 50%, #1a1a2e 75%, #16213e 75%, #16213e 100%);
+            background-size: 56.57px 56.57px;
+            position: relative;
+        }
+        .node-point {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-900 text-gray-100 flex flex-col">
+    <header class="bg-gray-800 border-b border-cyan-500/30 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/generated-website-1734616213747/" class="text-cyan-400 text-xl font-mono">Centience::Status</a>
+                <div class="flex space-x-4">
+                    <a href="/generated-website-1734616213747/regions.html" class="text-cyan-400 hover:text-cyan-300">Regions</a>
+                    <a href="/generated-website-1734616213747/incidents.html" class="text-gray-300 hover:text-cyan-400">Incidents</a>
+                    <a href="/generated-website-1734616213747/subscribe.html" class="text-gray-300 hover:text-cyan-400">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="bg-gray-800 rounded-lg p-6 mb-6">
+            <h2 class="text-2xl font-mono mb-4">System Status</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <div class="flex items-center justify-between">
+                        <span>Core Network</span>
+                        <span class="status-pulse text-green-400">● ONLINE</span>
+                    </div>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <div class="flex items-center justify-between">
+                        <span>Neural Interface</span>
+                        <span class="status-pulse text-yellow-400">● DEGRADED</span>
+                    </div>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <div class="flex items-center justify-between">
+                        <span>Consciousness Bridge</span>
+                        <span class="status-pulse text-red-400">● OFFLINE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="bg-gray-800 rounded-lg p-6">
+            <h1 class="text-3xl font-mono mb-6">Regional Network Status</h1>
+            
+            <div class="grid lg:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <h3 class="text-xl font-mono mb-4">Active Regions</h3>
+                    
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-mono">NA-WEST</span>
+                            <span class="status-pulse text-green-400">● OPTIMAL</span>
+                        </div>
+                        <div class="text-sm text-gray-300">
+                            Load: 42% | Latency: 12ms | Nodes: 1,247
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-mono">EU-CENTRAL</span>
+                            <span class="status-pulse text-yellow-400">● DEGRADED</span>
+                        </div>
+                        <div class="text-sm text-gray-300">
+                            Load: 78% | Latency: 47ms | Nodes: 892
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="font-mono">ASIA-PACIFIC</span>
+                            <span class="status-pulse text-green-400">● OPTIMAL</span>
+                        </div>
+                        <div class="text-sm text-gray-300">
+                            Load: 35% | Latency: 28ms | Nodes: 1,583
+                        </div>
+                    </div>
+                </div>
+
+                <div class="region-map h-96 rounded-lg relative">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <span class="text-cyan-400 font-mono">Interactive Map Temporarily Unavailable</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-xl font-mono mb-4">Recent Updates</h3>
+                <div class="space-y-4">
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <div class="text-sm text-gray-300">
+                            <span class="text-cyan-400">2024-01-15 14:23 UTC</span> - EU-CENTRAL experiencing increased latency due to neural pathway congestion
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <div class="text-sm text-gray-300">
+                            <span class="text-cyan-400">2024-01-15 12:07 UTC</span> - NA-WEST completed scheduled consciousness bridge maintenance
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 border-t border-cyan-500/30 mt-auto">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-sm text-gray-400">
+                    <a href="/generated-website-1734616213747/terms.html" class="hover:text-cyan-400">Terms</a> |
+                    <a href="/generated-website-1734616213747/privacy.html" class="hover:text-cyan-400">Privacy</a> |
+                    <a href="/generated-website-1734616213747/contact.html" class="hover:text-cyan-400">Contact</a>
+                </div>
+                <div class="text-sm text-gray-400 mt-4 md:mt-0">
+                    © 2024 Centience Corporation. All consciousness rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

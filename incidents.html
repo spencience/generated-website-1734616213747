@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident History - Centience Access Status</title>
+    <meta name="description" content="View and track system incidents affecting Centience's neural interface and consciousness bridge services. Real-time status updates and incident reports.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pulse {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+        .status-pulse {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-900 text-gray-100 flex flex-col">
+    <header class="bg-gray-800 border-b border-cyan-500/30 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/generated-website-1734616213747/" class="text-cyan-400 text-xl font-mono">Centience::Status</a>
+                <div class="flex space-x-4">
+                    <a href="/generated-website-1734616213747/regions.html" class="text-gray-300 hover:text-cyan-400">Regions</a>
+                    <a href="/generated-website-1734616213747/incidents.html" class="text-gray-300 hover:text-cyan-400">Incidents</a>
+                    <a href="/generated-website-1734616213747/subscribe.html" class="text-gray-300 hover:text-cyan-400">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="bg-gray-800 rounded-lg p-6 mb-6">
+            <h2 class="text-2xl font-mono mb-4">System Status</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <div class="flex items-center justify-between">
+                        <span>Core Network</span>
+                        <span class="status-pulse text-green-400">● ONLINE</span>
+                    </div>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <div class="flex items-center justify-between">
+                        <span>Neural Interface</span>
+                        <span class="status-pulse text-yellow-400">● DEGRADED</span>
+                    </div>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <div class="flex items-center justify-between">
+                        <span>Consciousness Bridge</span>
+                        <span class="status-pulse text-red-400">● OFFLINE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="bg-gray-800 rounded-lg p-6">
+            <h1 class="text-3xl font-mono mb-6">Recent Incidents</h1>
+            
+            <div class="space-y-6">
+                <div class="border border-red-500/30 rounded-lg p-4">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl text-red-400">Consciousness Bridge Failure</h3>
+                        <span class="text-sm text-gray-400">2024-01-20 15:43 UTC</span>
+                    </div>
+                    <p class="text-gray-300 mb-2">Critical system failure detected in the primary consciousness bridge array. Emergency protocols engaged.</p>
+                    <div class="space-y-2">
+                        <div class="bg-gray-700/50 p-2 rounded">
+                            <span class="text-red-400">15:43</span> - Multiple bridge nodes reporting quantum coherence loss
+                        </div>
+                        <div class="bg-gray-700/50 p-2 rounded">
+                            <span class="text-red-400">15:47</span> - Failover to backup systems unsuccessful
+                        </div>
+                        <div class="bg-gray-700/50 p-2 rounded">
+                            <span class="text-red-400">15:52</span> - Engineering team deployed to restore functionality
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-yellow-500/30 rounded-lg p-4">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl text-yellow-400">Neural Interface Latency</h3>
+                        <span class="text-sm text-gray-400">2024-01-20 14:15 UTC</span>
+                    </div>
+                    <p class="text-gray-300 mb-2">Increased latency detected in neural interface systems affecting EU-West region.</p>
+                    <div class="space-y-2">
+                        <div class="bg-gray-700/50 p-2 rounded">
+                            <span class="text-yellow-400">14:15</span> - Latency spikes detected above 150ms threshold
+                        </div>
+                        <div class="bg-gray-700/50 p-2 rounded">
+                            <span class="text-yellow-400">14:30</span> - Load balancing adjustments in progress
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-green-500/30 rounded-lg p-4">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl text-green-400">Resolved: Authentication Service Disruption</h3>
+                        <span class="text-sm text-gray-400">2024-01-19 22:30 UTC</span>
+                    </div>
+                    <p class="text-gray-300 mb-2">Brief authentication service disruption affecting 5% of users.</p>
+                    <div class="space-y-2">
+                        <div class="bg-gray-700/50 p-2 rounded">
+                            <span class="text-green-400">22:30</span> - Issue identified and resolved
+                        </div>
+                        <div class="bg-gray-700/50 p-2 rounded">
+                            <span class="text-green-400">22:45</span> - Service fully restored
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <a href="/generated-website-1734616213747/incidents/history.html" class="text-cyan-400 hover:underline">View Full Incident History →</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 border-t border-cyan-500/30 mt-auto">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-sm text-gray-400">
+                    <a href="/generated-website-1734616213747/terms.html" class="hover:text-cyan-400">Terms</a> |
+                    <a href="/generated-website-1734616213747/privacy.html" class="hover:text-cyan-400">Privacy</a> |
+                    <a href="/generated-website-1734616213747/contact.html" class="hover:text-cyan-400">Contact</a>
+                </div>
+                <div class="text-sm text-gray-400 mt-4 md:mt-0">
+                    © 2024 Centience Corporation. All consciousness rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

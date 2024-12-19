@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centience Network Status - Neural Interface Monitoring</title>
+    <meta name="description" content="Real-time monitoring dashboard for Centience neural interface systems, consciousness bridges, and core network infrastructure status.">
+    <meta name="keywords" content="neural interface, consciousness bridge, network status, centience, brain-computer interface">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pulse {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+        .status-pulse {
+            animation: pulse 2s infinite;
+        }
+        .incident-marker {
+            background: linear-gradient(45deg, #ff6b6b 25%, transparent 25%, transparent 75%, #ff6b6b 75%);
+            background-size: 4px 4px;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-900 text-gray-100 flex flex-col">
+    <header class="bg-gray-800 border-b border-cyan-500/30 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/generated-website-1734616213747/" class="text-cyan-400 text-xl font-mono">Centience::Status</a>
+                <div class="flex space-x-4">
+                    <a href="/generated-website-1734616213747/regions.html" class="text-gray-300 hover:text-cyan-400">Regions</a>
+                    <a href="/generated-website-1734616213747/incidents.html" class="text-gray-300 hover:text-cyan-400">Incidents</a>
+                    <a href="/generated-website-1734616213747/subscribe.html" class="text-gray-300 hover:text-cyan-400">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="bg-gray-800 rounded-lg p-6 mb-6">
+            <h2 class="text-2xl font-mono mb-4">System Status</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <div class="flex items-center justify-between">
+                        <span>Core Network</span>
+                        <span class="status-pulse text-green-400">● ONLINE</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mt-2">99.99% uptime last 30 days</p>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <div class="flex items-center justify-between">
+                        <span>Neural Interface</span>
+                        <span class="status-pulse text-yellow-400">● DEGRADED</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mt-2">Latency issues in NA-East</p>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <div class="flex items-center justify-between">
+                        <span>Consciousness Bridge</span>
+                        <span class="status-pulse text-red-400">● OFFLINE</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mt-2">Emergency maintenance</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6 mb-6">
+            <h3 class="text-xl font-mono mb-4">Active Incidents</h3>
+            <div class="space-y-4">
+                <div class="bg-gray-700 p-4 rounded-lg incident-marker">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="font-medium">Consciousness Bridge Outage</h4>
+                            <p class="text-sm text-gray-400 mt-1">Emergency maintenance due to quantum coherence degradation in primary consciousness transfer arrays.</p>
+                        </div>
+                        <span class="text-sm text-red-400">Critical</span>
+                    </div>
+                    <div class="mt-4 text-sm text-gray-400">
+                        <p>Started: 2024-01-20 15:42 UTC</p>
+                        <p>Estimated Resolution: 2024-01-20 22:00 UTC</p>
+                    </div>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="font-medium">Neural Interface Latency</h4>
+                            <p class="text-sm text-gray-400 mt-1">Increased synaptic processing delays affecting NA-East region.</p>
+                        </div>
+                        <span class="text-sm text-yellow-400">Major</span>
+                    </div>
+                    <div class="mt-4 text-sm text-gray-400">
+                        <p>Started: 2024-01-20 14:15 UTC</p>
+                        <p>Under Investigation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="text-xl font-mono mb-4">System Metrics</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h4 class="font-medium mb-2">Neural Load Distribution</h4>
+                    <div class="h-32 bg-gray-800 rounded-lg flex items-end p-2">
+                        <div class="flex-1 bg-cyan-500/30 h-[60%]" title="NA-West"></div>
+                        <div class="flex-1 bg-cyan-500/30 h-[80%] mx-1" title="NA-East"></div>
+                        <div class="flex-1 bg-cyan-500/30 h-[40%]" title="EU-Central"></div>
+                        <div class="flex-1 bg-cyan-500/30 h-[30%] mx-1" title="AP-South"></div>
+                    </div>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h4 class="font-medium mb-2">Consciousness Transfer Success Rate</h4>
+                    <div class="flex items-center justify-center h-32">
+                        <span class="text-4xl font-mono text-red-400">0%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 border-t border-cyan-500/30 mt-auto">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-sm text-gray-400">
+                    <a href="/generated-website-1734616213747/terms.html" class="hover:text-cyan-400">Terms</a> |
+                    <a href="/generated-website-1734616213747/privacy.html" class="hover:text-cyan-400">Privacy</a> |
+                    <a href="/generated-website-1734616213747/contact.html" class="hover:text-cyan-400">Contact</a>
+                </div>
+                <div class="text-sm text-gray-400 mt-4 md:mt-0">
+                    © 2024 Centience Corporation. All consciousness rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
